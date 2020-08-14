@@ -1,142 +1,44 @@
-<!-- poemWriterReader -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title> Poem Lovers</title>
+    <link rel="stylesheet" href="css/Main.css">
+    
+    <title>Document</title>
 </head>
 <body>
-   
-   <div id="container_main_nav">
+    <nav id="nav">
+        <h1> Created <span> Own</span></h1>
+        <ol>
+            <li> Home </li>
+            <li> Invite </li>
+            <li> Main</li>
+            <li> about </li>
 
-     
+        </ol>
+    </nav>
 
-        <div id="main_nav">
-            <h1> Lets <span> Go </span> </h1>
+    <h1> Todo <span class="styling"> list </span></h1>
 
-            <ol class="nav-links" id="nav_links">
-                <li> <a href="#top_level_Page"> Home </a></li>
-                <li> <a href="#ppoem"> Poem </a></li>
-                <li> <a href="#create_poem"> Create Poem </a></li>
-                <li> <a href="#contact"> Contact </a></li>
-               
-            </ol>
-
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-                
-             </div>
-
-        </div>
-    
-        <div id="top_level_Page">
-            <h1> Welcome To Poem World</h1>
-            <h2> Read and Write Poems</h2>
-        </div>
-
-
-
-   </div>
-
-   <div class="second-page" id="second_page_poem">
-
-        <h1 id="pname"> Name of the poem </h1>
-        <h2 id="pauthor"> Author of the poem </h2>
-    
-        <div id="poem_container">
-
-            <p id="ppoem" >
-        
-               
-        
-            </p>
-
+        <div class="input_div">
        
-        </div>  
+           <input class="input" type="text" placeholder="What to do ">
+            <button class="addButton"> Add </button>
+
+        </div>
         
-    
-        <h2 id="ppopularity">popularity</h2>
-    
-        <button class="pre " onclick="add('pre')">  < </button>
-        <button class="next" onclick="add('next')">  > </button>
+            <div class="container">
+                <!--
+                <div class="item">
+                    <input type="text" class="text_item" disabled value="sport">
+                    <button class="editButton">edit</button>
+                    <button class="removeButton">Remove</button>
+                </div>
 
-   </div >
-   <div class="div_own_btn">
-   <button class="create_own_poem_btn" id="create_poem">  Make Your Poem </button>
-    </div>
+                -->
+            </div>
 
-
-   <div class="third-page" id="third_page_own_create_poem">
-
-            <h1 id="show_user_poem_name"> OWN CREATED Name of the poem </h1>
-            <h2 id="show_user_name"> OWN CREATED Author of the poem </h2>
-
-            <div id="poem_container_op">
-
-                <p id="show_user_poem" >
-            
-                own Created
-                </p>
-
-        
-            </div>  
-    </div>
-
-   <div id="container-for-poem-input" >
-
-        <h1 id="display"> Enter You Poem </h1>
-
-        <form action="" id="container-1-form">
-            <textarea name="poem" id="input_user_poem" cols="70" rows="30" placeholder="poem"></textarea>
-            
-            <p> Enter Your Name </p>
-            <input type="text" id="input_user_name">
-            <p> Enter Poem Name</p>
-            <input type="text" id="input_user_poem_name">
-        
-        </form>
-        <button id="btn_save_input"> submit </button>
-        <button id="btn_cancel_input"> cancel </button>
-
-
-    </div>
-
-
-
-    <div class="contact" id="contact"> 
-        <h1> Contact</h1>
-        <br>
-        <form action="">
-            <br>
-            <label for=""> Please Enter your Email ID</label>
-            <br>
-            <input type="text" name="" id="email">
-            <br>
-            <label for=""> Enter Message </label>
-            <br>
-           <textarea name="" id="" cols="30" rows="10" placeholder="Please Enter Your Message "></textarea>
-        
-      
-
-        </form>
-
-        <button class="send"> send </button>
-
-    </div>
-
-    <div id="bottom_div">
-    <p> copyright &copy; Suraj Tiwari web Dev 2020 </p>
-    </div>
-
-    
-
-
-
-<script src="javaScript/script.js"> </script>
+            <script src="java/java.js"></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+   color: black;
+  
+}
+span
+{
+    color: blue;
+}
+#nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+}
+
+#nav ol{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#nav h1{
+   margin-left: 5px;
+}
+
