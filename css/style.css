@@ -1,0 +1,436 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* home nav */
+
+#container_main_nav
+{
+    background: linear-gradient(rgba(123, 0, 238, 0.9), rgba(123, 0, 238, 0.9)), url("../images/Park_top_page.jpg");
+}
+
+#main_nav
+{
+    position: fixed;
+}
+
+#main_nav
+{ 
+    width: 100%;
+    height: 50px;
+    background-color: rgba(123, 0, 238, 0.7);
+    display: flex;
+    justify-content: space-between;
+    color: wheat;
+    box-shadow: 3px 3px 3px rgb(56, 15, 83);
+    align-items: center;
+}
+
+#main_nav h1
+{
+    margin: 10px;
+}
+
+#main_nav ol{
+    width: 36%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#main_nav ol li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* hover effect */
+#main_nav ol li a:hover
+{
+   color: rgb(131, 243, 168);
+}
+
+#main_nav h1:hover 
+{
+   color:  rgb(153, 255, 192)
+}
+
+/* top level div */
+
+#top_level_Page
+{
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 325px;
+    justify-content: center;
+    text-align: center;
+}
+
+#top_level_Page h1
+{
+ color: rgb(213, 243, 209);
+   font-size: 35px;
+    top: 50%;
+    bottom: 50%;
+}
+
+#top_level_Page h2
+{
+ color: rgb(209, 228, 243);
+   font-size: 35px;
+    top: 50%;
+    bottom: 50%;
+}
+
+
+
+/* second page */
+
+#second_page_poem
+{
+   
+   
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(253, 253, 255);
+   
+}
+.third-page
+{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(253, 253, 255);
+    
+}
+
+
+#pname ,#show_user_poem_name
+{
+    font-family: Lucida Console;
+    margin: 10px;
+   
+}
+
+#pauthor, #show_user_name
+{
+   font-family: sans-serif;
+   font-weight: 300;
+    margin: 10px;
+   font-size: 20px;
+   
+}
+
+#poem_container, #poem_container_op
+{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+   align-items: center;
+
+}
+
+.next
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.pre
+{
+    
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+#poem_container p ,#show_user_poem
+{
+    font-family: sans-serif;
+    word-spacing: 2px;
+    font-size: 20px;
+    justify-content: center;
+    font-style: oblique;
+    background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.3)), url(../images/paper-texture.jpg);
+    box-shadow: 3px 3px 4px black;
+
+}
+
+br
+{
+    margin: 5px;
+}
+
+
+#pdescription
+{
+    margin: 10px;
+    background-color: whitesmoke;
+    
+}
+#ppopularity
+{
+    text-shadow: 1px 1px 1px black;
+}
+
+
+
+
+
+
+
+/* hidding nav bar */
+
+.hamburger
+{
+    display: none;
+}
+
+/* Responsive For nav bar only */
+
+@media screen and (max-width: 768px)
+{
+    #main_nav
+    {
+        position: fixed;
+    }
+
+   .mystyle
+    {
+        clip-path: circle(1000px at 90% 50%) !important;
+    }
+    .hamburger  .line
+    {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 2px;
+    }
+
+    .hamburger
+    {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        cursor: pointer;
+        right: 5%;
+        transform: translate(-5,-50%);
+    }
+   
+    #main_nav ol
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        justify-content: center;
+        margin: 10px;
+        background-color: black;
+        padding-top: 100vh;
+        clip-path: circle(0px at 90% 50%);
+        transition: all 0.6s ease-out;
+    }
+    
+    #main_nav ol li
+    {
+        margin: 50px !important;
+    }
+
+    .nav-links li:nth-child(1)
+    {
+        transition: all 0.3s ease 0.4s;
+    }
+    .nav-links li:nth-child(2)
+    {
+        transition: all 0.3s ease 0.5s;
+
+    }
+    .nav-links li:nth-child(3)
+    {
+        transition: all 0.3s ease 0.6s;
+    }
+
+}
+
+/* ... */
+
+
+/* format form */
+
+#container-for-poem-input
+{
+    display: none;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+}
+
+#container-for-poem-input h1, #container-for-poem-input p
+{
+    font-family: Comic Sans MS;    
+    margin: 10px;
+}
+
+#container-for-poem-input form
+{
+    align-content: center;
+}
+
+#container-for-poem-input form textarea 
+{
+   border-radius: 3px;
+  font-family: Trebuchet MS;
+}
+
+#container-for-poem-input button
+{
+    background-color: rgb(0, 161, 224);
+    padding: 10px;
+    border-radius: 5px;
+    color: wheat;
+    margin: 10px;
+}
+#container-for-poem-input input
+{
+    
+    width: 50%;
+    height: 30px;
+    border-radius: 3px;
+    font-family: Trebuchet MS;
+}
+
+
+.div_own_btn
+{
+    display: flex;
+    justify-content: center;
+}
+
+.div_own_btn button
+{
+  
+    background: linear-gradient(to bottom, #e0f334 0%,#e0f334 100%); /* W3C */
+   height: 30px;
+    border-radius: 5px;
+    position: relative;
+    border-bottom: 4px solid #e0f334;
+    color: #000000;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+   
+    font-size: 15px;
+    text-align: left;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+    cursor: pointer;
+  
+  text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+#bottom_div
+{
+    display: flex;
+    color: white;
+    height: 29px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 10px;
+    
+}
+
+
+/* contact */
+
+#contact
+{
+   
+    text-align: center;
+}
+
+#contact h1
+{
+    font-family: fantasy;
+}
+
+#contact label
+{
+    font-family: serif;
+   font-size: 20px;
+}
+
+#contact input
+{ 
+    border-radius: 3px;
+    width: 50%;
+    height: 30px;
+    border-radius: 3px;
+    font-family: Trebuchet MS;
+    
+}
+
+#contact textarea
+{
+    width: 50%;
+    height: 300px;
+    border-radius: 3px;
+    font-family: Trebuchet MS;
+    margin: 10px;
+}
+
+#contact button 
+{
+    width: 130px;
+  height: 40px;
+  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+ 
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 15px;
+  text-align: left;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+
+text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
